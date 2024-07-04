@@ -1,0 +1,6 @@
+gTTS
+openai==1.35.10
+playsound
+pyaudio
+PyObjC  # For playsound
+SpeechRecognition
