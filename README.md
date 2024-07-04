@@ -5,6 +5,7 @@
 - [Installation](#installation)
     - [Requirements](#requirements)
 - [Usage](#usage)
+    - [OpenAI API Key](#openai-api-key)
     - [Command Line Interface](#command-line-interface)
 
 ##  Description
@@ -37,15 +38,24 @@ For developing, testing, formatting and linting:
 
 `pip install -r requirements-dev.txt`
 
-[Back to Top](#ecole-core)
+[Back to Top](#mcsiri)
 
 ##  Usage
 
+### OpenAI API Key
+
+This program requires an OPENAI_API_KEY. You can include it with one of the following methods:
+1. Use the --openai-api-key CLI argument to cli.py
+2. Use an environment variable, i.e. `export OPENAI_API_KEY=xxxx python mcsiri/cli.py [ARGS]`
+
 ### Command Line Interface
+
+You can run this program with either of the following:
+- `python mcsiri/cli.py`
+- `mcsiri`
+
+Use --stream-logs to see logging
 
 Try `python mcsiri/cli.py --help` for more information.
 
-You will need to pass the OPENAI_API_KEY by one of the following methods:
-1. Use the --openai-api-key flag
-2. Use an environment variable, i.e. `export OPENAI_API_KEY=xxxx python mcsiri/cli.py [ARGS]`
-
+[Back to Top](#mcsiri)
